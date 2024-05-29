@@ -1,6 +1,27 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.informacion {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
 }
+
+.informacion.abierto {
+  z-index: 1000;
+  animation: entrada 0.5s ease-in-out;
+}
+
+.informacion.oculto {
+ display: none; 
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateY(-1500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

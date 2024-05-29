@@ -1,61 +1,26 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-import slide_image_1 from './assets/images/img_1.jpg';
-import slide_image_2 from './assets/images/img_2.jpg';
+import Slider from "./SwiperSlide/Slider";
+import { useState } from "react";
+import './App.css';
 
 function App() {
+  const [mostrarComponente1, setMostrarComponente1] = useState(false); // Cambiado a false
 
+  const toggleComponente = () => {
+    setMostrarComponente1(!mostrarComponente1);
+  };
 
   return (
-    <div className="container">
-    <h1 className="heading">Flower Gallery</h1>
-    <Swiper
-      effect={'coverflow'}
-      grabCursor={true}
-      centeredSlides={true}
-      loop={true}
-      slidesPerView={'auto'}
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.5,
-      }}
-      pagination={{ el: '.swiper-pagination', clickable: true }}
-      navigation={{
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        clickable: true,
-      }}
-      modules={[EffectCoverflow, Pagination, Navigation]}
-      className="swiper_container"
-    >
-      <SwiperSlide>
-        <img src={slide_image_1} alt="slide_image" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <div style={{width: '37rem', height: '42rem', backgroundColor: 'red'}}>HOLA</div>
-      </SwiperSlide>
-      
-
-      <div className="slider-controler">
-        <div className="swiper-button-prev slider-arrow">
-          <ion-icon name="arrow-back-outline"></ion-icon>
-        </div>
-        <div className="swiper-button-next slider-arrow">
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </div>
-        <div className="swiper-pagination"></div>
+    <div>
+      <div className={`informacion ${mostrarComponente1 ? 'abierto' : 'oculto'}`}>
+        <button onClick={toggleComponente}>volver</button>
       </div>
-    </Swiper>
-  </div>
-  )
+      <div >
+        <Slider goto={toggleComponente}></Slider>
+      </div>
+    
+    </div>
+  );
 }
 
-export default App
+export default App;
+
