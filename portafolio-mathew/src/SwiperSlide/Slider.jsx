@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import './Slider.css';
 import PropTypes from 'prop-types'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-
+import profileImage from '../assets/profile-int.png';
 const Slider = ({goto}) => {
   
   
@@ -38,7 +38,7 @@ const Slider = ({goto}) => {
       >
         <SwiperSlide>
           
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <img src={profileImage} />
            
         </SwiperSlide>
         <SwiperSlide>
