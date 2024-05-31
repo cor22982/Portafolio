@@ -9,7 +9,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import Profile from '../Pages/Profile';
 import TextAnimate from '../Components/TextAnimate/TextAnimate';
 import Tools from '../Pages/Tools';
-
+import Work from '../Pages/Work/Work';
 const Slider = ({goto}) => {
   
   const steps = [
@@ -55,7 +55,9 @@ const Slider = ({goto}) => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <div className="slide-wrapper" onClick={goto}>
+            <Work></Work>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />

@@ -1,0 +1,45 @@
+.contenido-code{
+  display: flex;
+  gap: 10px;
+  border: 2px solid #36f136;
+  padding-left: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.text-cod{
+  font-size: 15px;
+  color: #36f136;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.text-code{
+  color: #94caea;
+  background-color: #161b22;
+  font-family: 'Courier New', Courier, monospace;
+  width: 195px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.btn-copy{
+  background-color: transparent;
+  border: none;
+  color: #00db00;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 15%;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  
+}
+
+.btn-copy:hover{
+  background-color: rgba(0, 219, 0, 0.22);
+}
