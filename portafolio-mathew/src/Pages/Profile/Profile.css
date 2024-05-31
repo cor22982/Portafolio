@@ -8,13 +8,13 @@
 }
 .text-over-image {
   position: absolute;
-  top: 60%; /* Ajusta para centrar verticalmente */
+  top: 60%; 
  
   transform: translate(-50%, -50%); 
   transform: translateX(10%);
   color: #c4e7ff; 
   font-size: 16px; 
-  font-family: 'Courier New', Courier, monospace; 
+  font-family:  'Courier New', Courier, monospace; 
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px; 
   border-radius: 5px;
