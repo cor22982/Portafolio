@@ -2,7 +2,7 @@ import Slider from "./SwiperSlide/Slider";
 import { useState } from "react";
 import './App.css';
 import ToolsUp from "./PagesUP/ToolsUp/ToolsUp";
-
+import WorkUp from "./PagesUP/WorkUp/WorkUp";
 function App() {
   const [mostrarComponente1, setMostrarComponente1] = useState(false); // Cambiado a false
 
@@ -16,7 +16,7 @@ function App() {
         <div className="boton-e">
           <button onClick={toggleComponente} className="quit">X</button>
         </div>
-        <ToolsUp></ToolsUp>
+        <WorkUp></WorkUp>
       </div>
       <div >
         <Slider goto={toggleComponente}></Slider>
