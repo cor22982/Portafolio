@@ -6,14 +6,21 @@ import 'swiper/css/navigation';
 import './Slider.css';
 import PropTypes from 'prop-types'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-import profileImage from '../assets/profile-int.png';
+import Profile from '../Pages/Profile';
+import TextAnimate from '../Components/TextAnimate/TextAnimate';
+
 const Slider = ({goto}) => {
   
-  
+  const steps = [
+    
+    'Programador Junior',
+    'Estudiante Ingenieria en Sistemas',
+    'Desarrollador Fronted'
+  ];
 
   return (
     <div className="container">
-      <h1 className="heading">Flower Gallery</h1>
+      <TextAnimate steps={steps}></TextAnimate>
       
       <Swiper
         effect={'coverflow'}
@@ -38,7 +45,7 @@ const Slider = ({goto}) => {
       >
         <SwiperSlide>
           
-            <img src={profileImage} />
+            <Profile></Profile>
            
         </SwiperSlide>
         <SwiperSlide>

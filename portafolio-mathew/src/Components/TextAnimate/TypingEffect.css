@@ -1,0 +1,19 @@
+.code-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.code-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.6em;
+  color: #36f136;
+  font-weight: bold;
+}
+
+.code-container::before {
+  content: '>';
+  color: #36f136;
+  font-size: 1.6em;
+  margin-right: 5px;
+}
+
