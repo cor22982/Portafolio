@@ -3,6 +3,7 @@ import { useState } from "react";
 import './App.css';
 import ToolsUp from "./PagesUP/ToolsUp/ToolsUp";
 import WorkUp from "./PagesUP/WorkUp/WorkUp";
+import PortaUp from "./PagesUP/PortaUp/PortaUp";
 function App() {
   const [mostrarComponente1, setMostrarComponente1] = useState(false); // Cambiado a false
 
@@ -16,7 +17,7 @@ function App() {
         <div className="boton-e">
           <button onClick={toggleComponente} className="quit">X</button>
         </div>
-        <WorkUp></WorkUp>
+        <PortaUp/>
       </div>
       <div >
         <Slider goto={toggleComponente}></Slider>

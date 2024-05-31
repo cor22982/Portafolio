@@ -10,6 +10,7 @@ import Profile from '../Pages/Profile';
 import TextAnimate from '../Components/TextAnimate/TextAnimate';
 import Tools from '../Pages/Tools';
 import Work from '../Pages/Work/Work';
+import Portafolio from '../Pages/Portafoliop/Portafoliop';
 const Slider = ({goto}) => {
   
   const steps = [
@@ -49,6 +50,12 @@ const Slider = ({goto}) => {
             <Profile></Profile>
            
         </SwiperSlide>
+        
+        <SwiperSlide>
+          <div className="slide-wrapper" onClick={goto}>
+            <Portafolio></Portafolio>
+          </div>
+        </SwiperSlide>
         <SwiperSlide>
           <div className="slide-wrapper" onClick={goto}>
             <Tools></Tools>
@@ -58,9 +65,6 @@ const Slider = ({goto}) => {
           <div className="slide-wrapper" onClick={goto}>
             <Work></Work>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
         </SwiperSlide>
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
