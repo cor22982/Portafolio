@@ -8,9 +8,10 @@ import StudyUp from "./PagesUP/StudyUp/StudyUp";
 
 function App() {
   const [mostrarComponente1, setMostrarComponente1] = useState(false); // Cambiado a false
-
-  const toggleComponente = () => {
+  const [selectpage , setSelectPage] = useState(0);
+  const toggleComponente = (page) => {
     setMostrarComponente1(!mostrarComponente1);
+    setSelectPage(page)
   };
 
   return (
@@ -19,7 +20,10 @@ function App() {
         <div className="boton-e">
           <button onClick={toggleComponente} className="quit">X</button>
         </div>
-        <StudyUp/>
+        {selectpage === 1 && <PortaUp />}
+        {selectpage === 2 && <ToolsUp />}
+        {selectpage === 3 && <WorkUp />}
+        {selectpage === 4 && <StudyUp />}
       </div>
       <div >
         <Slider goto={toggleComponente}></Slider>

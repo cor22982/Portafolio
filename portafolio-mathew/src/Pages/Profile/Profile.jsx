@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <div className='contenedor-profile'>
       <img src={profileImage} className='image-prof' />
-      <p className="text-over-image">Soy Mathew Cordero Aquino, tengo 21 años y soy ingeniero en sistemas. Además, soy desarrollador web con experiencia laboral de 2 años en el sector, con conocimientos en herramientas de frontend.</p>
+      <p className="text-over-image">Soy Mathew Cordero Aquino, tengo 21 años y soy ingeniero en sistemas. Además, soy desarrollador web con experiencia laboral de 2 años en el sector, incluyendo conocimientos en herramientas de frontend.</p>
     </div>
   );
 }
