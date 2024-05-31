@@ -53,22 +53,22 @@ const Slider = ({goto}) => {
         </SwiperSlide>
         
         <SwiperSlide>
-          <div className="slide-wrapper" onClick={goto}>
+          <div className="slide-wrapper" onClick={ () => goto(1)}>
             <Portafolio></Portafolio>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-wrapper" onClick={goto}>
+          <div className="slide-wrapper" onClick={ () => goto(2)}>
             <Tools></Tools>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-wrapper" onClick={goto}>
+          <div className="slide-wrapper" onClick={ () => goto(3)}>
             <Work></Work>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-wrapper" onClick={goto}>
+          <div className="slide-wrapper" onClick={ () => goto(4)}>
             <Study></Study>
           </div>
         </SwiperSlide>
