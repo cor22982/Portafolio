@@ -11,6 +11,7 @@ import TextAnimate from '../Components/TextAnimate/TextAnimate';
 import Tools from '../Pages/Tools';
 import Work from '../Pages/Work/Work';
 import Portafolio from '../Pages/Portafoliop/Portafoliop';
+import Study from '../Pages/Study/Study';
 const Slider = ({goto}) => {
   
   const steps = [
@@ -64,6 +65,11 @@ const Slider = ({goto}) => {
         <SwiperSlide>
           <div className="slide-wrapper" onClick={goto}>
             <Work></Work>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-wrapper" onClick={goto}>
+            <Study></Study>
           </div>
         </SwiperSlide>
         <div className="slider-controler">
