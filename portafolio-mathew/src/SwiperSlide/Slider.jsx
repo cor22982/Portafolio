@@ -8,6 +8,7 @@ import PropTypes from 'prop-types'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 import Profile from '../Pages/Profile';
 import TextAnimate from '../Components/TextAnimate/TextAnimate';
+import Tools from '../Pages/Tools';
 
 const Slider = ({goto}) => {
   
@@ -21,7 +22,7 @@ const Slider = ({goto}) => {
   return (
     <div className="container">
       <TextAnimate steps={steps}></TextAnimate>
-      
+     
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -50,7 +51,7 @@ const Slider = ({goto}) => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-wrapper" onClick={goto}>
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Flower 4" />
+            <Tools></Tools>
           </div>
         </SwiperSlide>
         <SwiperSlide>
