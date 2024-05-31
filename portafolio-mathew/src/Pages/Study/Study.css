@@ -1,0 +1,16 @@
+.text-over-image-s{
+  
+  color: #a8faa8; 
+  font-size: 40px; 
+  font-family:  'Courier New', Courier, monospace; 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px; 
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 150px;
+
+}
