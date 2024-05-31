@@ -1,6 +1,7 @@
 import Slider from "./SwiperSlide/Slider";
 import { useState } from "react";
 import './App.css';
+import ToolsUp from "./PagesUP/ToolsUp/ToolsUp";
 
 function App() {
   const [mostrarComponente1, setMostrarComponente1] = useState(false); // Cambiado a false
@@ -12,7 +13,10 @@ function App() {
   return (
     <div>
       <div className={`informacion ${mostrarComponente1 ? 'abierto' : 'oculto'}`}>
-        <button onClick={toggleComponente}>volver</button>
+        <div className="boton-e">
+          <button onClick={toggleComponente} className="quit">X</button>
+        </div>
+        <ToolsUp></ToolsUp>
       </div>
       <div >
         <Slider goto={toggleComponente}></Slider>

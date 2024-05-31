@@ -1,0 +1,44 @@
+.contenedor-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Importante para el posicionamiento absoluto */
+}
+
+.contenedor-total {
+  position: absolute !important; /* Posiciona esta imagen de forma absoluta dentro del contenedor */
+  top: 20% !important; /* Ajusta según sea necesario */
+  left: 0 !important; /* Ajusta según sea necesario */
+
+}
+
+.logo-image{
+  width: 80px !important;
+  height: 80px !important;
+  margin-left: 5px;
+}
+
+.image-tool {
+  border: 2px solid #d5490b;
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantiene la proporción */
+}
+
+
+.iconos{
+  margin-left: 15px;
+}
+
+
+.text-over-image-i {
+  color: #f7af91; 
+  font-size: 40px; 
+  font-family:  'Courier New', Courier, monospace; 
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px; 
+  border-radius: 5px;
+  max-width: 290px;
+  margin-left: 20px; 
+  margin-top: 20px;
+  text-align: center; 
+}

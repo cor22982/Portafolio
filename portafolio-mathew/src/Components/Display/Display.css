@@ -1,0 +1,52 @@
+.raise {
+  height: 20px;
+  width: 200px;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 17px;
+  color: var(--color);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.percentage {
+  text-align: center;
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  border-color: var(--hover);
+  color: #fff;
+}
+
+.raise::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--percentage);
+  background-color: var(--background-color);
+  z-index: -1;
+  transition: width 0.25s;
+}
+
+.contenedor-raise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
