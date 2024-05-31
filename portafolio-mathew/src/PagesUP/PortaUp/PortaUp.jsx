@@ -41,7 +41,7 @@ const PortaUp = () => {
       texto: "Calculadora (uso de testing)",
       color: "#61dbfb", 
       hovercolor: "#21a1f1",
-      image: "https://raw.githubusercontent.com/cor22982/Laboratorio_Calculadora/main/calculadora/public/calculadora.PNG?token=GHSAT0AAAAAACSMTQNUONCE2IQ6U76TIOZKZSZ3QSA",
+      image: "https://raw.githubusercontent.com/cor22982/Laboratorio_Calculadora/main/calculadora/public/calculadora.PNG?token=GHSAT0AAAAAACSMTQNUKJ7E3RTQKYWAQFD4ZSZ32IQ",
       link: "https://github.com/cor22982/Laboratorio_Calculadora.git"
     }
 
