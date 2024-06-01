@@ -5,7 +5,7 @@ import ToolsUp from "./PagesUP/ToolsUp/ToolsUp";
 import WorkUp from "./PagesUP/WorkUp/WorkUp";
 import PortaUp from "./PagesUP/PortaUp/PortaUp";
 import StudyUp from "./PagesUP/StudyUp/StudyUp";
-
+import ContactsUp from "./PagesUP/ContactsUp/ContactsUp";
 function App() {
   const [mostrarComponente1, setMostrarComponente1] = useState(false); // Cambiado a false
   const [selectpage , setSelectPage] = useState(0);
@@ -24,6 +24,7 @@ function App() {
         {selectpage === 2 && <ToolsUp />}
         {selectpage === 3 && <WorkUp />}
         {selectpage === 4 && <StudyUp />}
+        {selectpage === 5 && <ContactsUp/>}
       </div>
       <div >
         <Slider goto={toggleComponente}></Slider>

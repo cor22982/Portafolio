@@ -12,6 +12,8 @@ import Tools from '../Pages/Tools';
 import Work from '../Pages/Work/Work';
 import Portafolio from '../Pages/Portafoliop/Portafoliop';
 import Study from '../Pages/Study/Study';
+import Contact from '../Pages/Contact/Contact';
+
 const Slider = ({goto}) => {
   
   const steps = [
@@ -70,6 +72,11 @@ const Slider = ({goto}) => {
         <SwiperSlide>
           <div className="slide-wrapper" onClick={ () => goto(4)}>
             <Study></Study>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide-wrapper" onClick={ () => goto(5)}>
+            <Contact></Contact>
           </div>
         </SwiperSlide>
         <div className="slider-controler">

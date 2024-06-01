@@ -1,0 +1,21 @@
+.background-contact {
+  border: 2px solid #ff6bf3;
+  height: 420px;
+  max-width: 490px;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.contact-title {
+  color: #ffa0f7;
+  font-size: 40px; 
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}

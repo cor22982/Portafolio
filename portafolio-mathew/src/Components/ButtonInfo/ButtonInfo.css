@@ -1,0 +1,41 @@
+.contenido-botoninfo{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.contenido-letras{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+.titulo{
+  color: var(--tcolor);
+  font-size: 25px;
+}
+
+.contenido-t{
+  color: var(--thovcolor); 
+  font-size: 20px;
+}
+
+.icon-button {
+  color: var(--tcolor);
+  background: linear-gradient(to top, var(--thovcolor) 50%, transparent 50%);
+  background-size: 100% 200%; 
+  background-position: 0 0; 
+  transition: background-position 0.3s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  border: 2px solid var(--tcolor);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.icon-button:hover,
+.icon-button:focus {
+  background-position: 0 100%; 
+}
