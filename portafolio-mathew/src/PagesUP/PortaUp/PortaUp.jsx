@@ -31,11 +31,11 @@ const PortaUp = () => {
       link: "https://github.com/mathew-cordero/ReservaUVG.git"
     },
     {
-      texto: "Creador de Facturas y de Boletas (NorOriente Express)",
+      texto: "Creador de Manifiestos NorOriente",
       color: "#61dbfb", 
       hovercolor: "#21a1f1",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToNj6NsjJzXRwM3wWcgZbGjZcXeiwmAj3EEA&s",
-      link: "https://github.com/cor22982/PROYECTO-CREADOR-DE-FACTURAS-.git"
+      link: "https://github.com/cor22982/Creador_Manifiestos_Nor_Oriente.git"
     },
     {
       texto: "Calculadora (uso de testing)",
